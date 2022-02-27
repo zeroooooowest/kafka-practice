@@ -42,3 +42,7 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+tasks.bootJar {
+    mainClass.set("me.zw.kafkapractice.producer.KafkaPracticeApplicationKt")
+}
